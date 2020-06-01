@@ -112,17 +112,17 @@
 
 <script>
     $('#socket-status').html(
-        `<span class="float-right wd-100p tx-16 text-danger mg-l-10 animated fadeIn">Socket Offline<span class="square-8 bg-danger rounded-circle"></span> </span>`
+        `<span class="float-right wd-100p tx-16 text-danger mg-l-10 animated fadeIn"><span class="square-8 bg-danger rounded-circle"></span>  Socket Offline</span>`
     )
 
     $('#device-status').html(
-        `<span class="float-right wd-100p tx-16 text-danger mg-l-10 animated fadeIn">Device Offline<span class="square-8 bg-danger rounded-circle"></span> </span>`
+        `<span class="float-right wd-100p tx-16 text-danger mg-l-10 animated fadeIn"><span class="square-8 bg-danger rounded-circle"></span> Device Offline</span>`
     )
     var isConnect = false;
     socket.on('eh-water', (data) => {
         isConnect = true;
         $('#device-status').html(
-            `<span class="float-right wd-100p tx-16 text-success mg-l-10 ">Online<span class="square-8 bg-success rounded-circle"></span> </span>`
+            `<span class="float-right wd-100p tx-16 text-success mg-l-10 "><span class="square-8 bg-success rounded-circle"></span> Online </span>`
         )
         $('#tstamp').text(data.tstamp)
         $('#ph').text(fix_val(data.ph, 1))
@@ -136,7 +136,7 @@
         setTimeout(() => {
             if (!isConnect) {
                 $('#device-status').html(
-                    `<span class="float-right animated fadeIn wd-100p tx-16 text-danger mg-l-10 animated fadeIn">Offline<span class="square-8 bg-danger rounded-circle"></span> </span>`
+                    `<span class="float-right animated fadeIn wd-100p tx-16 text-danger mg-l-10 animated fadeIn"><span class="square-8 bg-danger rounded-circle"></span> Offline </span>`
                 )
             }
         }, 2000);
@@ -145,7 +145,7 @@
     socket.on("disconnect", function () {
         isConnect = false;
         $('#socket-status').html(
-            `<span class="float-right animated fadeIn wd-100p tx-16 text-danger mg-l-10">Socket Offline<span class="square-8 bg-danger rounded-circle"></span> </span>`
+            `<span class="float-right animated fadeIn wd-100p tx-16 text-danger mg-l-10"><span class="square-8 bg-danger rounded-circle"></span> Socket Offline </span>`
         )
         // console.log("Socket server disconnected");
 
