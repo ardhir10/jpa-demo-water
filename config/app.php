@@ -14,7 +14,7 @@ return [
      */
 
     'name' => env('APP_NAME', 'Laravel'),
-    'sub_name' => env('SUB_NAME', 'Endress + Hauser'),
+    'sub_name' => env('SUB_NAME', 'Water Monitoring'),
 
     /*
     |--------------------------------------------------------------------------

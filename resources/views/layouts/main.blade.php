@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@yield('page_title') | {{ config('app.sub_name') }}</title>
-    <link rel="shortcut icon" href="{{asset('/favicon.ico')}}" />
+    <link rel="shortcut icon" href="http://iotjpa.com/assets/images/logo.png" />
     <link href="{{ asset('backend/') }}/lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="{{ asset('backend/') }}/lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css">
 
