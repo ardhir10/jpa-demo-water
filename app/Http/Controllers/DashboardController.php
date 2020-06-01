@@ -21,9 +21,6 @@ class DashboardController extends Controller
     public function __invoke(Request $request)
     {
 
-
-
-        
         $data['users'] = Users::paginate(5);
         $data['page_title'] = 'Dashboard';
         $data['departements'] = Departements::all();

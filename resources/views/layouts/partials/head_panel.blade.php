@@ -7,7 +7,7 @@
 
         <div class="input-group   wd-100p transition " style="margin: auto;position: absolute;top: 50%;-ms-transform: translateY(-50%);transform: translateY(-52%);border-right: 0px !Important;left: 60px;">
             <div class="wd-100p ht-100p   pd-5 pd-x-15">
-               Endress+Hauser Environmental Smart System
+                 Jakarta Process Automation
             </div>
             {{-- <span class="tx-18"> EHESS</span> --}}
         </div>
@@ -22,13 +22,10 @@
             {{-- <span> BAGGING C<i class=" icon ion-ios-timer-outline"></i>UNTING SYSTEM --}}
         </div>
         <nav class="nav" data-toggle="tooltip" data-placement="left" title="{{ Auth::user()->name }}">
-
-
-
             <div class="dropdown">
                <a id="theButton" href="#" target="_blank" class="pos-relative" data-toggle="dropdown">
-                <img src="{{asset('backend/images/icon/eh-icon.png')}}" class="ht-50" alt="">
-                
+                {{-- <img src="{{asset('backend/images/icon/eh-icon.png')}}" class="ht-50" alt=""> --}}
+                <i class="fa fa-user mg-r-20"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-header wd-250 animated rounded-20">
                     <div class="tx-center">

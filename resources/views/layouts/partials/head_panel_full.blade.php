@@ -9,7 +9,7 @@
 
         <div class="input-group   wd-100p transition " style="  border-right: 0px !Important">
             <div class="wd-100p ht-100p   pd-5 pd-x-15">
-                Endress+Hauser Environmental Smart System
+                 Jakarta Process Automation
             </div>
             {{-- <span class="tx-18"> EHESS</span> --}}
         </div>
@@ -29,7 +29,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-header wd-100 pd-10">
                 <a href="{{url('/login')}}" >
-                    <button class="btn wd-100p btn-magenta tx-bold tx-white">LOGIN</button>
+                    <button class="btn wd-100p btn-teal tx-bold tx-white">LOGIN</button>
                 </a>
             </div><!-- dropdown-menu -->
         </div><!-- navicon-right -->

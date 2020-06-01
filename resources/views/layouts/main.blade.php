@@ -34,7 +34,7 @@
     <!-- ########## START: LEFT PANEL ########## -->
     <div class="br-logo tx-18 shadow" style="z-index: 10000;">
         <a href="{{url('/')}}" class="wd-100p text-center">
-            <img src="{{asset('backend/logo-eh-2.png')}}" class=" wd-100p" alt="">
+            <img src="{{asset('backend/logo-jpa.png')}}" class="ht-50" alt="">
         </a>
     </div>
 
