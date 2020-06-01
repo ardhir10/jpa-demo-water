@@ -156,25 +156,25 @@
         // console.log(data.status);
         if (data.status === 'socket-connect') {
             $('#socket-status').html(
-                `<span class="float-right wd-100p tx-16 text-success mg-l-10  ">Online<span class="square-8 animated fadeIn bg-success rounded-circle"></span> </span>`
+                `<span class="float-right wd-100p tx-16 text-success mg-l-10  "><span class="square-8 animated fadeIn bg-success rounded-circle"></span> Online </span>`
             )
         }
 
         if (data.status === 'socket-disconnect') {
             $('#socket-status').html(
-                `<span class="float-right wd-100p tx-16 text-danger mg-l-10  ">Gateway Offline<span class="square-8 animated fadeIn bg-danger rounded-circle"></span> </span>`
+                `<span class="float-right wd-100p tx-16 text-danger mg-l-10  "><span class="square-8 animated fadeIn bg-danger rounded-circle"></span> Gateway Offline </span>`
             )
         }
 
         if (data.status === 'device-connect') {
             $('#device-status').html(
-                `<span class="float-right wd-100p tx-16 text-success mg-l-10 ">Online<span class="square-8 bg-success animated fadeIn rounded-circle"></span> </span>`
+                `<span class="float-right wd-100p tx-16 text-success mg-l-10 "><span class="square-8 bg-success animated fadeIn rounded-circle"></span> Online </span>`
             )
         }
 
         if (data.status === 'device-disconnect') {
             $('#device-status').html(
-                `<span class="float-right wd-100p tx-16 text-danger mg-l-10  ">Device Offline<span class="square-8 animated fadeIn bg-danger rounded-circle"></span> </span>`
+                `<span class="float-right wd-100p tx-16 text-danger mg-l-10  "><span class="square-8 animated fadeIn bg-danger rounded-circle"></span> Device Offline </span>`
             )
         }
 
