@@ -68,10 +68,19 @@
                         <div class="col-md-12  ">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="remember" id="remember"
-                                    {{ old('remember') ? 'checked' : '' }}>
-
+                                {{ old('remember') ? 'checked' : '' }}>
+                                
                                 <label class="form-check-label" for="remember">
                                     {{ __('Remember Me') }}
+                                </label>
+                                
+                                
+                            </div>
+                            <div class="form-check">
+                                 <input class="form-check-input" id="demo" type="checkbox" name="demo">
+
+                                <label class="form-check-label" for="remember">
+                                    {{ __('Sign As Guest') }}
                                 </label>
                             </div>
                         </div>
@@ -97,7 +106,19 @@
             video.addEventListener('canplay', function () {
                 video.play();
             });
-
+        });
+        $(document).ready(function(){
+            $('#demo').click(function(){
+                if($(this).prop("checked") == true){
+                    document.getElementById("email").value = "guest@gmail.com";
+                    document.getElementById("password").value = "guest";
+                    $('button[type="submit"').click();
+                }
+                else if($(this).prop("checked") == false){
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                }
+            });
         });
 
     </script>
