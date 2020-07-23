@@ -13,7 +13,7 @@ class TrendingReportController extends Controller
     public function __construct()
     {
         $this->middleware('auth')->except('trend');
-        $this->middleware('privilege:trending_report_view')->except('trend');
+        // $this->middleware('privilege:trending_report_view')->except('trend');
     }
 
 
