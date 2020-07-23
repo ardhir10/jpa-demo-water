@@ -14,7 +14,7 @@ class DashboardController extends Controller
     {
         $this->middleware('auth');
 
-        $this->middleware('privilege:Dashboard');
+        // $this->middleware('privilege:Dashboard');
        
     }
 
